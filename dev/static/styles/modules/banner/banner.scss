@@ -1,0 +1,70 @@
+.banner {
+    height        : 960px;
+    background    : url('../images/content/banner.jpg')no-repeat 0 /cover;
+    padding-top   : 130px;
+    padding-bottom: 58px;
+
+    &__container {
+        display        : flex;
+        flex-direction : column;
+        height         : 100%;
+        justify-content: space-between;
+        position       : relative;
+
+    }
+
+    &__title {
+        font-family   : "Montserrat";
+        text-transform: uppercase;
+        font-size     : 50px;
+        text-align    : left;
+        color         : #fff;
+        line-height   : 61px;
+
+        & .sub {
+            font-weight: 300;
+        }
+
+        & .sup {
+            font-weight: 700;
+        }
+    }
+
+    &__nav {
+        display: flex;
+
+    }
+
+    &__item {
+        margin-right: 90px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        font-family    : "Montserrat";
+        font-weight    : 500;
+        font-size      : 24px;
+        text-align     : left;
+        color          : #fff;
+        text-decoration: none;
+        padding-bottom : 5px;
+        border-bottom  : 1px solid rgba($color: #FFFFFF, $alpha: 0.5);
+        transition     : all 0.3s linear;
+        text-transform : uppercase;
+        line-height    : 29px;
+
+        &:hover {
+            color       : #fff;
+            border-color: #fff;
+        }
+    }
+
+    &__widget {
+        position: absolute;
+        top     : 0;
+        right   : 0;
+    }
+}

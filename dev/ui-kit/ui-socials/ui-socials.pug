@@ -3,4 +3,8 @@ mixin socialLink(icon,link)
 		a(href=link).socials__link
 			+icon(icon, 'socials__icon')
 
-ul.socials
+ul.socials(data-aos="fade-left" data-aos-duration="1000")
+	+socialLink('facebook', '#')
+	+socialLink('telegram', '#')
+	+socialLink('twitter', '#')
+	+socialLink('youtube', '#')

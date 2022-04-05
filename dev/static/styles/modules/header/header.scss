@@ -1,1 +1,51 @@
-header { flex: 0 0 auto; }
+header {
+  flex: 0 0 auto;
+}
+
+.header {
+  position: absolute;
+  top     : 34px;
+  left    : 0;
+  right   : 0;
+  z-index : 10;
+
+  &.navbar-light .navbar-toggler {
+    border: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  &__container {
+    display    : flex;
+    align-items: center;
+  }
+
+  &__nav {
+    margin: auto;
+
+    & .nav {
+      // &-item {}
+      
+      &-link {
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size  : 20px;
+        text-align : center;
+        color      : #fff;
+
+        &:hover {
+          color: #00489A;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1440px;
+  }
+}

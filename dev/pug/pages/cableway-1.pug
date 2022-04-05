@@ -1,0 +1,78 @@
+extends ../template/main
+
+block variables
+    - var title = 'Cable Car'
+
+block content
+    .intro__small
+        .intro__small__container.container
+            .intro__body 
+                .title(data-aos="fade-up" data-aos-duration="1000") Канатная дорога
+                .icon(data-aos="fade-up" data-aos-duration="1000") 
+                    svg( viewBox="0 0 229.527 187.408" width="230" fill="#fff")
+                        use(xlink:href="static/images/svg/symbol/sprite.svg#intro_logo")
+
+    .features.border-bottom.p-5
+        .container.features__container 
+            .section__title(data-aos="fade-up" data-aos-duration="1000") ОСНОВНЫЕ УДОБСТВА
+            .section__subtitle(data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200") Канатная дорога является метеозависимым транспортом и работает по фактической погоде. Перед поездкой на канатную дорогу, уточняйте информацию о её работе на сайте или по телефону.
+            .row.g-md-2 
+                .col-xl-6.col-lg-6.col-md-6
+                    .features__card(data-aos="fade-up" data-aos-duration="1000")
+                        .features__image
+                            img(src="static/images/content/features-01.jpg" alt="")
+                        .features__center 
+                            .icon 
+                                svg( viewBox="0 0 100 100" width="130" fill="#fff")
+                                    use(xlink:href="static/images/svg/symbol/sprite.svg#length")
+                            .title Протяженность
+                            .subtitle 1680 м. 
+                .col-xl-6.col-lg-6.col-md-6
+                    .features__card(data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200")
+                        .features__image
+                            img(src="static/images/content/features-01.jpg" alt="")
+                        .features__center 
+                            .icon 
+                                svg( viewBox="0 0 100 100" width="130" fill="#fff")
+                                    use(xlink:href="static/images/svg/symbol/sprite.svg#hiking")
+                            .title Пропускная способность
+                            .subtitle 2400 чел./час.
+                                  
+    .container.cableway__content.content__grid
+        .row.g-0.flex-row-reverse
+            .col-lg-6
+                .text.d-flex.flex-column.justify-content-center.align-items-center(data-aos="fade-left" data-aos-duration="1000")  
+                    .text__title Рестораны
+                    .text__val 
+                        p «Chinorkent» расположен в живописной горной местности, у подножья Чаткальского хребта Тянь- Шанских гор, в 65 км.от Ташкента. Побывав у нас, вы обретёте особое душевное состояние, которое создаётся живописным пейзажем, почувствуете себя частью природы, отдохнёте от городской суеты.
+            .col-lg-6
+                .image(data-aos="fade-right" data-aos-duration="1000")
+                    img(src="static/images/content/cableway-6.jpg" alt="")
+        .row.g-0
+            .col-lg-6
+                .text.d-flex.flex-column.justify-content-center.align-items-center(data-aos="fade-right" data-aos-duration="1000")  
+                    .text__title Детские площадки
+                    .text__val 
+                        p У нас на территории комплекса установлены две современные детские площадки международной компании KSIL, отвечающим всем требованиям безопасности. 
+                        p Вход на территорию детской площадки свободный. Дети до 7 лет должны быть в сопровождении родителей.
+            .col-lg-6
+                .image(data-aos="fade-left" data-aos-duration="1000")
+                    img(src="static/images/content/cableway-7.jpg" alt="")
+        .row.g-0.flex-row-reverse 
+            .col-lg-6
+                .text.d-flex.flex-column.justify-content-center.align-items-center(data-aos="fade-left" data-aos-duration="1000")  
+                    .text__title Свадьба в горах
+                    .text__val 
+                        p Свадебная церемония - это событие, которое хочется запомнить на всю жизнь. Сделайте горы свидетелями вашего союза – отпразднуйте свадьбу на курорте “Chinorkent”.
+                        p Для Вашей незабываемой церемонии “Chinorkent” предлагает площадки на открытом воздухе и рестораны на любой вкус. Вам только нужно представить, какой будет ваша свадьба: фуршет на смотровой площадке среди живописных горных вершин или регистрация на открытой террасе ресторана. На “Chinorkent” Вас ждет индивидуальный подход и высокий уровень сервиса.
+            .col-lg-6
+                a.image(href="https://www.youtube.com/watch?v=kebq86BTZFA" data-lightbox="video" data-aos="fade-right" data-aos-duration="1000").test-popup-link
+                    img(src="static/images/content/cableway-8.jpg" alt="" )
+
+
+block script 
+    script 
+       | $('.test-popup-link').magnificPopup({
+       |     type: 'iframe'
+       |     // other options
+       | });

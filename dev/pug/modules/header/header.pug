@@ -1,1 +1,29 @@
-header.header
+mixin headerNavLink(link, title)
+  li.nav-item
+    a(href=link).nav-link=title
+
+header.header.navbar.navbar-expand-lg.navbar-light
+  .header__container.container
+    a.header__logo(href="")
+      svg( viewBox="0 0 100 100" width="80" fill="#fff")
+        use(xlink:href="./static/images/svg/symbol/sprite.svg#logo")
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      include ../../../ui-kit/ui-sandwich/ui-sandwich
+    </button>
+    
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        
+        <button type="button" class="btn-close text-reset ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        .header__nav
+          ul.nav 
+            +headerNavLink('#', "Главная")
+            +headerNavLink('#'," О нас")
+            +headerNavLink('#', "Новости")
+            +headerNavLink('#', "Виды услуг")
+            +headerNavLink('#', "Контакты")
+
+
+

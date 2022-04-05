@@ -4,3 +4,24 @@ block variables
 	- var title = 'Главная страница'
 
 block content
+	include modules/intro/intro
+	include modules/features/features
+	include modules/news/news
+	include modules/banner/banner
+	include modules/gallery/gallery
+block script 
+	script
+		| new Splide('.splide', {
+		| 	type: 'fade',
+		| 	perPage: 1,
+		| 	perMove: 1,
+		| 	autoplay: true,
+		| 	arrow: false,
+		|   pagination: false,
+		| 	speed: 4000,
+		| 	interval: 5000,
+		| 	arrows: false,
+		| 	rewind: true,
+		| 	heightRatio: 1,
+		| 	direction: 'ttb'
+		| }).mount()

@@ -5,6 +5,7 @@ const plumber = require('gulp-plumber'),
       csscomb = require('gulp-csscomb'),
       sourcemaps = require('gulp-sourcemaps'),
       rename = require('gulp-rename'),
+      gcmq = require('gulp-group-css-media-queries'),
       stylesPATH = {
           "input": "./dev/static/styles/",
           "output": "./build/static/css/"
@@ -19,6 +20,7 @@ module.exports = function () {
             .pipe(autoprefixer({
                  overrideBrowserslist:  ['last 3 versions']
             }))
+            .pipe(gcmq())
             .pipe(sourcemaps.write())
             .pipe(rename('styles.min.css'))
             .pipe($.gulp.dest(stylesPATH.output))

@@ -1,0 +1,76 @@
+.intro 
+    .intro__container.container
+        .intro__slider
+            <div class="splide h-100">
+                <div class="splide__track h-100">
+                    <ul class="splide__list h-100">
+                        <li class="splide__slide">
+                            img(src="static/images/content/intro_slider-1.jpg" alt="")
+                        </li>
+                        <li class="splide__slide">
+                            img(src="static/images/content/intro_slider-2.jpg" alt="")
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    .intro__body 
+        .intro__body__container.container 
+            .row 
+                .col-lg-6.d-flex.justify-content-center.flex-column.ps-xl-0
+                    .intro__title(data-aos="fade-up" data-aos-duration="1000") Незабываемые эмоции, которых Вы достояны
+                    .intro__subtitle(data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200") Горно-лыжный курорт и канатная дорога и ещё много других
+                .col-lg-6 
+                    .intro__logo(data-aos="fade-left" data-aos-duration="1000") 
+                        svg( viewBox="0 0 100 100" width="314" fill="#fff")
+                            use(xlink:href="static/images/svg/symbol/sprite.svg#intro_logo")
+                    .list.justify-content-center(data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100") 
+                        .list__title  
+                            span.icon 
+                                svg( viewBox="0 0 500 500" width="60" fill="white" )
+                                    use(xlink:href="static/images/svg/symbol/sprite.svg#clock")
+                            span Время работы
+                        .list__item 
+                            em ПОДЪЕМ
+                            em 11:00 - 16:00
+                        .list__item 
+                            em ПОДЪЕМ
+                            em 11:00 - 16:00
+    .intro__footer
+        .intro__footer__container.container
+            include ../../../ui-kit/ui-socials/ui-socials
+            .weather-widget--small.weather(data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200")
+                .weather__info
+                    .left
+                        .icon 
+                            svg( viewBox="0 0 500 500" width="80" fill="white" )
+                                use(xlink:href="static/images/svg/symbol/sprite.svg#weather")
+                        .temperature 17&deg;С 	
+                        .place Chinorkent
+                    .right
+                        .temperature__range
+                            .up 
+                                .icon 
+                                    svg( viewBox="0 0 500 500" height="20" fill="white" )
+                                        use(xlink:href="static/images/svg/symbol/sprite.svg#himidity_down")
+                                .val 15&deg;			
+                            .down
+                                .icon 
+                                    svg( viewBox="0 0 500 500" height="20" fill="white" )
+                                        use(xlink:href="static/images/svg/symbol/sprite.svg#himidity_up")
+                                .val 22&deg;
+                .weather__date 
+                    .time 14:24
+                    .weekday Вторник
+                    .date январь 18
+            .list.justify-content-center.align-items-center(data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200")
+                .list__title  
+                    span.icon 
+                        svg( viewBox="0 0 500 500" width="60" fill="white" )
+                            use(xlink:href="static/images/svg/symbol/sprite.svg#ticket")
+                    span Стоимость проезда в одну сторону
+                .list__item 
+                    em ПОДЪЕМ
+                    em 11:00 - 16:00
+                .list__item 
+                    em ПОДЪЕМ
+                    em 11:00 - 16:00	

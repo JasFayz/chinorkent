@@ -1,1 +1,54 @@
-footer.footer
+footer#footer.footer
+    a.footer__logo(href="#" data-aos="zoom-in" data-aos-duration="1000"  )
+        svg( viewBox="0 0 100 100" width="136" fill="#fff")
+            use(xlink:href="static/images/svg/symbol/sprite.svg#logo")
+    .footer__nav         	            	            
+        .footer__item(href="" data-aos="fade-left" data-aos-duration="1000" ) 
+            a.footer__link(href="") О нас	    
+        .footer__item(href="" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200")
+            a.footer__link(href="")  Новости
+        .footer__item(href="" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300")
+            a.footer__link(href="") Услуги
+        .footer__item(href="" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400")
+            a.footer__link(href="") Тарифы
+    .container            
+        .footer__bottom 
+            .contacts 
+                .footer__title Контакты
+                .contacts__icon 
+                    .contacts__item(data-aos="fade-right" data-aos-duration="1000")
+                        .icon
+                            svg( viewBox="0 0 21.76 31.085" width="21" fill="white" )
+                                use(xlink:href="static/images/svg/symbol/sprite.svg#marker")
+                        .title O'zbekiston, Toshkent shahar, 100091, Chilonzor, ko'chaning nomi
+                    .contacts__item(data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100")
+                        .icon
+                            svg( viewBox="0 0 21.76 31.085" width="21" fill="white" )
+                                use(xlink:href="static/images/svg/symbol/sprite.svg#phone")
+                        .title 
+                            b Telefon: 
+                            |+99871 123-45-67 +99871 123-45-67 
+                    .contacts__item(data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200")
+                        .icon
+                            svg( viewBox="0 0 21.76 31.085" width="21" fill="white" )
+                                use(xlink:href="static/images/svg/symbol/sprite.svg#fax")
+                        .title 
+                            b Telefon: 
+                            | +99871 123-45-67
+                    a.contacts__item(href="mailto:info@chinorkent.uz" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300")
+                        .icon
+                            svg( viewBox="0 0 21.76 31.085" width="21" fill="white" )
+                                use(xlink:href="static/images/svg/symbol/sprite.svg#mail_at")
+                        .title info@chinorkent.uz
+
+            .copyright(href="" data-aos="fade-up" data-aos-duration="1000" ) 
+                p При использовании материалов ссылка на www.chinorkent.uz обязательна.
+                p Внимание! Если Вы нашли ошибку в тексте, выделите её и нажмите Ctrl+Enter для уведомления администрации
+
+                p © Все права защищены 2022
+            .footer__social 
+                .footer__title  Мы в соцсетях:
+                include ../../../ui-kit/ui-socials/ui-socials
+                a.developer(href="#")
+                    svg( viewBox="0 0 141.97 15.251" width="141.97" fill="white" )
+                        use(xlink:href="static/images/svg/symbol/sprite.svg#uzinfocom")

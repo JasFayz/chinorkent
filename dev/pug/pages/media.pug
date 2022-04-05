@@ -1,0 +1,93 @@
+extends ../template/main
+
+block variables
+    - var title = 'Cable Car'
+
+block content
+    .intro__small
+        .intro__small__container.container
+            .intro__body 
+                .title(data-aos="fade-up" data-aos-duration="1000") Медиа
+                .icon(data-aos="fade-up" data-aos-duration="1000") 
+                    svg( viewBox="0 0 229.527 187.408" width="230" fill="#fff")
+                        use(xlink:href="static/images/svg/symbol/sprite.svg#intro_logo")
+
+    .media 
+        .container 
+            .section__title(data-aos="fade-up" data-aos-duration="1000")  Сми о нас
+            .section__subtitle(data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200") «Chinorkent» расположен в живописной горной местности, у подножья Чаткальского хребта Тянь- Шанских гор, в 65 км.от Ташкента. Побывав у нас, вы обретёте особое душевное состояние, которое создаётся живописным пейзажем, почувствуете себя частью природы, отдохнёте от городской суеты.
+
+        .container.media__container 
+            .row
+                .col-lg-4.col-md-4.col-sm-6 
+                    a.media__item(href="https://www.youtube.com/watch?v=kebq86BTZFA" data-aos="fade-up" data-aos-duration="1000")
+                        .media__image 
+                            img(src="static/images/content/cableway-8.jpg" alt="")
+                        .media__text 
+                            .media__title Свадебные торжества
+                            .media__date 17.08.2021
+                .col-lg-4.col-md-4.col-sm-6 
+                    a.media__item(href="https://www.youtube.com/watch?v=kebq86BTZFA" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50")
+                        .media__image 
+                            img(src="static/images/content/zortv.jpg" alt="")
+                        .media__text 
+                            .media__title МЫ НА КАНАЛЕ zo’r tv
+                            .media__date 17.08.2021
+                .col-lg-4.col-md-4.col-sm-6 
+                    a.media__item(href="https://www.youtube.com/watch?v=kebq86BTZFA" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100")
+                        .media__image 
+                            img(src="static/images/content/sevimli.jpg" alt="")
+                        .media__text 
+                            .media__title МЫ НА КАНАЛЕ Sevimli
+                            .media__date 17.08.2021
+                .col-lg-4.col-md-4.col-sm-6 
+                    a.media__item(href="https://www.youtube.com/watch?v=kebq86BTZFA" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150")
+                        .media__image 
+                            img(src="static/images/content/sevimli.jpg" alt="")
+                        .media__text 
+                            .media__title МЫ НА КАНАЛЕ Sevimli
+                            .media__date 17.08.2021
+                .col-lg-4.col-md-4.col-sm-6 
+                    a.media__item(href="https://www.youtube.com/watch?v=kebq86BTZFA" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200")
+                        .media__image 
+                            img(src="static/images/content/cableway-8.jpg" alt="")
+                        .media__text 
+                            .media__title Свадебные торжества
+                            .media__date 17.08.2021
+                .col-lg-4.col-md-4.col-sm-6 
+                    a.media__item(href="https://www.youtube.com/watch?v=kebq86BTZFA" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250")
+                        .media__image 
+                            img(src="static/images/content/zortv.jpg" alt="")
+                        .media__text 
+                            .media__title МЫ НА КАНАЛЕ zo’r tv
+                            .media__date 17.08.2021
+                .col-lg-4.col-md-4.col-sm-6 
+                    a.media__item(href="https://www.youtube.com/watch?v=kebq86BTZFA" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300")
+                        .media__image 
+                            img(src="static/images/content/cableway-8.jpg" alt="")
+                        .media__text 
+                            .media__title Свадебные торжества
+                            .media__date 17.08.2021
+                .col-lg-4.col-md-4.col-sm-6 
+                    a.media__item(href="https://www.youtube.com/watch?v=kebq86BTZFA" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350")
+                        .media__image 
+                            img(src="static/images/content/zortv.jpg" alt="")
+                        .media__text 
+                            .media__title МЫ НА КАНАЛЕ zo’r tv
+                            .media__date 17.08.2021
+                .col-lg-4.col-md-4.col-sm-6 
+                    a.media__item(href="https://www.youtube.com/watch?v=kebq86BTZFA" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400")
+                        .media__image 
+                            img(src="static/images/content/sevimli.jpg" alt="")
+                        .media__text 
+                            .media__title МЫ НА КАНАЛЕ Sevimli
+                            .media__date 17.08.2021
+
+
+block script 
+    script 
+        | $('.media').magnificPopup({
+        |     delegate: 'a', 
+        |     type: 'iframe'
+        |
+        |    });

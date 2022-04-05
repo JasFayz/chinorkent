@@ -8,7 +8,15 @@ const uglify = require('gulp-uglify'),
 
 module.exports = function () {
     $.gulp.task('libsJS:dev', () => {
-        return $.gulp.src(['node_modules/svg4everybody/dist/svg4everybody.min.js'])
+        return $.gulp.src([
+            'node_modules/svg4everybody/dist/svg4everybody.min.js', 
+            'node_modules/bootstrap/dist/js/bootstrap.min.js',
+            'node_modules/@splidejs/splide/dist/js/splide.min.js',
+            'node_modules/nanogallery2/dist/jquery.nanogallery2.js',
+            'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
+            'node_modules/aos/dist/aos.js',
+            
+        ])
             .pipe(concat('libs.min.js'))
             .pipe($.gulp.dest(scriptsPATH.output));
     });
@@ -20,6 +28,7 @@ module.exports = function () {
             .pipe($.gulp.dest(scriptsPATH.output));
     });
 
+    
     $.gulp.task('js:dev', () => {
         return $.gulp.src([scriptsPATH.input + '*.js',
             '!' + scriptsPATH.input + 'libs.min.js'])

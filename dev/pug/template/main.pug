@@ -7,7 +7,7 @@ html(lang="ru-RU")
 		meta(charset="utf-8")
 		title #{title}
 		<!--[if IE]>
-		meta(http-equiv='X-UA-Compatible', content="IE = edge")
+		meta(http-equiv='X-UA-Compatible' content="IE = edge")
 		<![endif]-->
 		meta(name="viewport" content="width=device-width,initial-scale=1")
 		meta(name="keywords" content="")
@@ -22,6 +22,12 @@ html(lang="ru-RU")
 			.content
 				block content
 			include ../modules/footer/footer
+			<a href="tel: 8 888 888 88 88" rel="nofollow" class="btn-call">
+				<div class="btn-call__ico">
+					svg( viewBox="0 0 100 100" width="24" fill="#fff")
+						use(xlink:href="static/images/svg/symbol/sprite.svg#telephone")
+				</div>
+			</a>
 		script(src="static/js/jquery-3.3.1.min.js")
 		script(src="static/js/libs.min.js")
 		script(src="static/js/main.js")

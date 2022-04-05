@@ -1,0 +1,116 @@
+extends ../template/main
+
+block variables
+    - var title = 'Cable Car'
+
+block content
+    .intro__small
+        .intro__small__container.container
+            .intro__body 
+                .title(data-aos="fade-up" data-aos-duration="1000") Канатная дорога
+                .icon(data-aos="fade-up" data-aos-duration="1000") 
+                    svg( viewBox="0 0 229.527 187.408" width="230" fill="#fff")
+                        use(xlink:href="static/images/svg/symbol/sprite.svg#intro_logo")
+    .container.cableway__content.content__grid
+        .row.g-0
+            .col-lg-6
+                .text(data-aos="fade-up" data-aos-duration="1000") 
+                    .text__title О нас
+                    .text__val 
+                        p «Chinorkent» расположен в живописной горной местности, у подножья Чаткальского хребта Тянь- Шанских гор, в 65 км.от Ташкента. Побывав у нас, вы обретёте особое душевное состояние, которое создаётся живописным пейзажем, почувствуете себя частью природы, отдохнёте от городской суеты.
+                        p Уникальное месторасположение курорта, высокогорный климат с чистейшим воздухом привлекают сюда туристов. «Chinorkent» прекрасен в любое время года: зимой и ранней весной – это идеальное место для любителей снежных вершин и чистого озонированного воздуха, летом эта местность потрясает своей природной красотой и удивительным горным ландшафтом всех, кто предпочитает проводить отдых активно, с пользой для здоровья.
+                        p Наша новая ультрасовременная канатная дорога, произведенная компанией «Doppelmayr» (Австрия), откроет для Вас прекрасные пейзажи гор. Гондольная канатная дорога «Chinorkent» — одна из самых надежных и безопасных канатных дорог в мире. Благодаря панорамному остеклению кабин перед пассажирами открывается уникальный круговой обзор, позволяющий почувствовать себя частью природы. Посетив «Chinorkent», Вы окажетесь в живописном уголке, утопающем в зелени на фоне прекрасного горного пейзажа.
+            .col-lg-6
+                .image(data-aos="fade-left" data-aos-duration="1000")
+                    img(src="static/images/content/cableway-1.jpg" alt="")
+        .row.g-0.flex-row-reverse
+            .col-lg-6
+                .text(data-aos="fade-left" data-aos-duration="1000") 
+                    .text__title Тарифы
+                    .text__subtitle Прогулочный билет Chinorkent (в обе стороны)
+
+                    table.table.tariff__table
+                        tr 
+                            td(colspan=2) Дети 4+ и пенсионеры 
+                        tr 
+                            td (пн-пт) 30 000 сум 
+                            td (сб-вс) 35 000 сум
+                    table.table.tariff__table
+                        tr 
+                            td(colspan=2) Взрослые 14+ 
+                        tr 
+                            td (пн-пт) 60 000 сум 
+                            td (сб-вс) 70 000 сум
+            .col-lg-6 
+                .image(data-aos="fade-right" data-aos-duration="1000") 
+                    img(src="static/images/content/cableway-2.jpg" alt="")
+        .row.g-0
+            .col-lg-6
+                .text.text-center(data-aos="fade-right" data-aos-duration="1000")
+                    .text__title Купить билет
+                    .text__subtitle Прогулочный билет Chinorkent (в обе стороны)
+                    .text__simple 
+                        p Дети 4+ и пенсионеры (пн-пт)
+                        p Дети 4+ и пенсионеры (сб-вс)
+                        p Взрослые 14+ (пн-пт)
+                        p Взрослые 14+ (сб-вс)
+                    button.btn.btn-buyticket Купить билет
+            .col-lg-6
+                .image(data-aos="fade-left" data-aos-duration="1000")
+                    img(src="static/images/content/cableway-3.jpg" alt="")
+        .row.g-0.flex-row-reverse
+            .col-lg-6 
+                .text(data-aos="fade-left" data-aos-duration="1000") 
+                    .text__title График работы
+                    table.table.schedule__table 
+                        tr
+                            th(colspan="2")   Часы работы
+                        tr 
+                            td Понедельник
+                            td 16.00-21.00
+                        tr 
+                            td Вторник
+                            td 11.00-21.00
+                        tr 
+                            td Пятница
+                            td 11.00-23.00
+                        tr 
+                            td Воскресенье
+                            td 11.00-21.00
+            .col-lg-6
+                .image(data-aos="fade-right" data-aos-duration="1000")
+                    img(src="static/images/content/cableway-4.jpg" alt="")
+        .row.g-0
+            .col-lg-6 
+                .text.d-flex.flex-column.justify-content-center(data-aos="fade-right" data-aos-duration="1000") 
+                    .text__title.mb-5 Как добраться?
+                    .text__val Chinorkent расположен в 65 км. от Ташкента, в Бостанлыкском районе  поселке Ходжикент
+            .col-lg-6
+                .image(data-aos="fade-left" data-aos-duration="1000")
+                    #map(style="height: 100%")
+        .row.g-0.flex-row-reverse
+            .col-lg-6 
+                .text.d-flex.flex-column.justify-content-center.h-100(data-aos="fade-left" data-aos-duration="1000") 
+                    .text__title.mb-0 Правила перевозки и проезда пассажиров на канатной дороге
+            .col-lg-6
+                .image(data-aos="fade-right" data-aos-duration="1000")
+                    img(src="static/images/content/cableway-5.jpg" alt="")
+
+
+block script 
+    script(src="https://api-maps.yandex.ru/2.1/?apikey=cef8493d-ca5a-4a2c-8704-2c26f7d1e9ef&lang=en_US" type="text/javascript")
+    script 
+       | ymaps.ready(init);
+       | function init(){ 
+       |     // Creating the map.    
+       |     var myMap = new ymaps.Map("map", {
+       |         // The map center coordinates.
+       |         // Default order: “latitude, longitude”.
+       |         // To not manually determine the map center coordinates,
+       |         // use the Coordinate detection tool.
+       |         center: [41.311158, 69.279737],
+       |         // Zoom level. Acceptable values:
+       |         // from 0 (the entire world) to 19.
+       |         zoom: 7
+       |     });
+       | }
